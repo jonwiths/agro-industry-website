@@ -13,7 +13,7 @@ const labelAndIcon = [
   { name: 'Office@iaipng.com', icon: <RiMailSendLine /> },
   { name: '(+675) 7294 5305', icon: <BiPhoneCall /> },
   {
-    name: 'PO Box 1462, Boroko, NCD, Papua tNew Guinea',
+    name: 'PO Box 1462, Boroko, NCD, Papua New Guinea',
     icon: <MdOutlineLocationOn />
   },
   {
@@ -48,7 +48,7 @@ const socialMediaLinks = [
 const TopInfo = () => {
   return (
     <>
-      <Box as="section" bg="white" w="100%" p="16px">
+      <Box as="section" bg="white" maxW="100vw" p="16px">
         <Container maxW={'90vw'} color="#009A4F">
           <Flex gap={'2'} fontWeight={'bold'}>
             {labelAndIcon.map((info) => (
@@ -58,7 +58,7 @@ const TopInfo = () => {
                   display: 'flex',
                   alignItems: 'center',
                   columnGap: '5px',
-                  marginLeft: '15px'
+                  marginRight: '15px'
                 }}
               >
                 <Heading as="h6" size="md">
@@ -66,9 +66,9 @@ const TopInfo = () => {
                   {info.icon}
                 </Heading>
 
-                <Heading as="h6" size="xs">
+                <Text as="h6" fontSize={'xs'}>
                   {info.name}
-                </Heading>
+                </Text>
               </Box>
             ))}
 
