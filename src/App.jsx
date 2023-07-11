@@ -1,9 +1,10 @@
+import { Box } from '@chakra-ui/react';
+import Footer from './components/Footer'
 function App() {
   return (
     <>
-      <div>
-        <h1>Test</h1>
-      </div>
+      <Box height='200px'></Box>
+      <Footer/>
     </>
   );
 }
