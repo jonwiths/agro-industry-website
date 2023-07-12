@@ -8,7 +8,7 @@ const navPage = [
   { name: 'Our Projects', link: '#our-projects' },
   { name: 'Our Sectors', link: '#our-sector' },
   { name: 'Contact Us', link: '#contact-us' },
-  { name: 'Media', link: '#' }
+  { name: 'Media', link: '#media' }
 ];
 
 const Navbar = () => {
