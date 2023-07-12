@@ -65,6 +65,7 @@ const footerTheme2 = {
 const Footer = () => {
   return (
     <Box
+      id=""
       as="section"
       style={{
         backgroundImage:

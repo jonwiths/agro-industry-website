@@ -12,25 +12,25 @@ import { BiSolidCaretDownCircle } from 'react-icons/bi';
 
 const intlProjects = [
   {
-    logo: '/public/projects/1.png',
+    logo: '/projects/1.png',
     name: 'koroba agro industrial center ( aic )',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio exercitationem nisi, corporis, hic blanditiis voluptate fuga sit assumenda ex saepe, debitis dignissimos eligendi non.'
   },
   {
-    logo: '/public/projects/2.png',
+    logo: '/projects/2.png',
     name: 'tari piwa agro industrial centre ( aic)',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio exercitationem nisi, corporis, hic blanditiis voluptate fuga sit assumenda ex saepe, debitis dignissimos eligendi non.'
   },
   {
-    logo: '/public/projects/3.png',
+    logo: '/projects/3.png',
     name: 'tabubil (ok tedi) poultry integration',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio exercitationem nisi, corporis, hic blanditiis voluptate fuga sit assumenda ex saepe, debitis dignissimos eligendi non.'
   },
   {
-    logo: '/public/projects/4.png',
+    logo: '/projects/4.png',
     name: 'sanagus, kiunga agro industrial center ( aic )',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio exercitationem nisi, corporis, hic blanditiis voluptate fuga sit assumenda ex saepe, debitis dignissimos eligendi non.'

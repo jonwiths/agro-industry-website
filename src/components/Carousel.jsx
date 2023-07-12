@@ -104,7 +104,7 @@ const Carousel = () => {
       </Grid> */
   }
   return (
-    <Box position="relative" marginTop="50px">
+    <Box position="relative" marginTop="50px" id="carousel">
       <Grid
         templateColumns="repeat(7, 1fr)"
         sx={{ columnGap: '10px', rowGap: '10px', flexWrap: 'wrap' }}
