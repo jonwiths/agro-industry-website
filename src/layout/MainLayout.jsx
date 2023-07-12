@@ -3,7 +3,7 @@ import TopInfo from '../components/TopInfo';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
-import { Accordion } from '@chakra-ui/accordion';
+import AccordionList from '../components/AccordionList';
 import OurProjects from '../components/OurProjects';
 import Carousel from '../components/Carousel';
 import Vision from '../components/Vision';
@@ -22,7 +22,7 @@ const MainLayout = () => {
       <AboutUs />
       <Carousel />
       <OurProjects />
-      <Accordion />
+      <AccordionList />
       <Vision />
       <OurSector />
       <Media />

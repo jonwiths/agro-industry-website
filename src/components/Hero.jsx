@@ -37,7 +37,6 @@ const Hero = () => {
         bg="white"
         maxW="100vw"
         minH={'100vh'}
-        // direction={{ base: 'column', md: 'row' }}
         direction={'row'}
         gap={'0'}
       >
