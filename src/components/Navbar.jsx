@@ -23,7 +23,7 @@ const Navbar = () => {
       >
         <Container maxW={'90vw'} color="#FFF">
           <Flex>
-            <Image src="./public/nav-logo.png" name="nav logo" alt="nav logo" />
+            <Image src="/nav-logo.png" name="nav logo" alt="nav logo" />
             <Spacer />
             {navPage.map((page) => (
               <Box

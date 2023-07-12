@@ -80,7 +80,13 @@ const accordionList = [
 const AccordionList = () => {
   return (
     <>
-      <Box as="section" maxW="100vw" minH={'100vh'} marginTop={'60px'}>
+      <Box
+        as="section"
+        maxW="100vw"
+        minH={'100vh'}
+        marginTop={'60px'}
+        id="accordion-list"
+      >
         <Box
           p={'200px 16px'}
           w="100%"

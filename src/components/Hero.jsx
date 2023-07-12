@@ -41,7 +41,7 @@ const Hero = () => {
         gap={'0'}
       >
         <Flex
-          backgroundImage={'url("./public/hero-bg-L.png")'}
+          backgroundImage={'url("/hero-bg-L.png")'}
           backgroundRepeat={'no-repeat'}
           backgroundPosition={'bottom'}
           backgroundSize={'cover'}
@@ -141,7 +141,7 @@ const Hero = () => {
           </Box>
         </Flex>
         <Flex
-          backgroundImage={'url("./public/hero-bg-R.png")'}
+          backgroundImage={'url("/hero-bg-R.png")'}
           backgroundRepeat={'no-repeat'}
           backgroundPosition={'bottom'}
           backgroundSize={'cover'}

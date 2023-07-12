@@ -15,7 +15,7 @@ import { PiPlant } from 'react-icons/pi';
 const AboutUs = () => {
   return (
     <>
-      <Box as="section" bg="white" maxW="100vw" p="16px">
+      <Box as="section" bg="white" maxW="100vw" p="16px" id="about-page">
         <Container maxW={'90vw'} color="#009A4F">
           <Flex>
             <Box w={'60%'}>
@@ -67,113 +67,6 @@ const AboutUs = () => {
                 Read More <BsFillArrowRightCircleFill />{' '}
               </Button>
             </Box>
-            {/* <Box
-              w={'40%'}
-              display={'flex'}
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Flex>
-                <Box
-                  rounded={'xl'}
-                  boxShadow="md"
-                  p={1}
-                  w={'150px'}
-                  h={'150px'}
-                >
-                  <Box
-                    w={'100%'}
-                    h={'100%'}
-                    p={2}
-                    rounded={'2xl'}
-                    backgroundColor={'#009A4F'}
-                    color={'#fff'}
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center'
-                    }}
-                    boxShadow="md"
-                  >
-                    <PiPlant size={'60px'} />
-                    <Text fontSize={'15px'}>
-                      1,000 new direct job opportunities
-                    </Text>
-                  </Box>
-                </Box>
-                <Box boxShadow="md" rounded="full" p={1} w="400px" h="400px">
-                  <Image src="/public/about-img-1.png" w="100%" h="100%" />
-                </Box>
-                <Box boxShadow="md" p={1} w={'160px'} h={'160px'}>
-                  <Image src="/public/about-img-2.png" w="100%" h="100%" />
-                </Box>
-              </Flex>
-            </Box> */}
-
-            {/* <Box
-              w={'40%'}
-              display={'flex'}
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Flex position="relative">
-                <Box
-                  boxShadow="md"
-                  rounded="xl"
-                  p={1}
-                  w={'150px'}
-                  h={'150px'}
-                  position="absolute"
-                  top="0"
-                  left="0"
-                  zIndex={2}
-                >
-                  <Box
-                    w={'100%'}
-                    h={'100%'}
-                    p={2}
-                    rounded={'2xl'}
-                    backgroundColor={'#009A4F'}
-                    color={'#fff'}
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center'
-                    }}
-                    boxShadow="md"
-                  >
-                    <PiPlant size={'60px'} />
-                    <Text fontSize={'15px'}>
-                      1,000 new direct job opportunities
-                    </Text>
-                  </Box>
-                </Box>
-                <Box
-                  boxShadow="md"
-                  rounded="full"
-                  p={1}
-                  w="400px"
-                  h="400px"
-                  zIndex={1}
-                >
-                  <Image src="/public/about-img-1.png" w="100%" h="100%" />
-                </Box>
-                <Box
-                  boxShadow="md"
-                  p={1}
-                  w={'160px'}
-                  h={'160px'}
-                  position="absolute"
-                  bottom="0"
-                  right="0"
-                  zIndex={1}
-                >
-                  <Image src="/public/about-img-2.png" w="100%" h="100%" />
-                </Box>
-              </Flex>
-            </Box> */}
 
             <Box
               w={'40%'}
@@ -225,7 +118,7 @@ const AboutUs = () => {
                   h="400px"
                   zIndex={1}
                 >
-                  <Image src="/public/about-img-1.png" w="100%" h="100%" />
+                  <Image src="/about-img-1.png" w="100%" h="100%" />
                 </Box>
                 <Box
                   p={1}
@@ -236,7 +129,7 @@ const AboutUs = () => {
                   right="0"
                   zIndex={1}
                 >
-                  <Image src="/public/about-img-2.png" w="100%" h="100%" />
+                  <Image src="/about-img-2.png" w="100%" h="100%" />
                 </Box>
               </Flex>
             </Box>
