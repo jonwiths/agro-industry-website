@@ -8,6 +8,7 @@ import {
   Avatar,
   Card
 } from '@chakra-ui/react';
+import { BiSolidCaretDownCircle } from 'react-icons/bi';
 
 const intlProjects = [
   {
@@ -100,7 +101,7 @@ const OurProjects = () => {
                           MIPC
                         </Heading>
                       </Flex>
-                      <AccordionIcon />
+                      <BiSolidCaretDownCircle size={'30px'} color="#93CE20" />
                     </AccordionButton>
 
                     <AccordionPanel pb={4}>
@@ -169,7 +170,7 @@ const OurProjects = () => {
                             {project.name}
                           </Heading>
                         </Flex>
-                        <AccordionIcon />
+                        <BiSolidCaretDownCircle size={'30px'} color="#93CE20" />
                       </AccordionButton>
 
                       <AccordionPanel pb={4}>
