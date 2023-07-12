@@ -52,7 +52,7 @@ const ContactUs = () => {
       as='section'
       position='relative'
       h='715px' 
-      w='100vw'
+      w='100%'
       bg='#146E41'
       display='flex'
       flexDirection='column'

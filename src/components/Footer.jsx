@@ -75,7 +75,7 @@ const Footer = () => {
           flexShrink: '0',
           flexDirection: 'column'
         }} 
-        w='100vw' h='503px'
+        w='100%' h='503px'
       >
         <Flex>
           <Box width='67%' pt={70} px={50}>
@@ -149,11 +149,11 @@ const Footer = () => {
 
           <Box width='33%' display={'flex'} justifyContent={'end'} py={50} px={100}>
             <Image src='nav-logo.png' alt='Innovative Agri Andustry, Member of LR Group'
-            style={{
-              width: '185px',
-              height: '44.975px',
-              flexShrink: '0',
-            }}
+              style={{
+                width: '185px',
+                height: '44.975px',
+                flexShrink: '0',
+              }}
             ></Image>
           </Box>
         </Flex>
