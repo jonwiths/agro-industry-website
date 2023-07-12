@@ -47,6 +47,7 @@ const OurProjects = () => {
         backgroundColor="#fff"
         p="16px"
         marginTop={'60px'}
+        id="our-projects"
       >
         <Container maxW={'80vw'}>
           <Flex

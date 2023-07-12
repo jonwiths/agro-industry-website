@@ -1,3 +1,4 @@
+import { Image } from '@chakra-ui/image';
 import {
   Box,
   Container,
@@ -42,6 +43,7 @@ const Vision = () => {
         backgroundColor="#fff"
         p="16px"
         marginTop={'50px'}
+        id="vision"
       >
         <Container maxW={'90vw'}>
           <Heading as={'h3'} fontSize={'40px'} color={'#024731'}>
@@ -55,47 +57,115 @@ const Vision = () => {
             marginTop={'10px'}
             marginBottom={'50px'}
           />
-          <Flex w={'50%'} flexDirection={'column'}>
-            <Box lineHeight={'1.10'}>
-              <Text fontSize={'40px'} color={'#024731'}>
-                Developing sustainable and profitable agriculture projects
-              </Text>
-              <Text color={'#024731'} marginTop={'10px'}>
-                improve standard of living by creating employment, investing in
-                downstream processing, capacity building and training; leading
-                to better access to market (both domestic & international)
-                turning subsistence farmers into cash-cropping farmers.
-              </Text>
-            </Box>
-            <Box>
-              <Text
-                color={'#024731'}
-                fontWeight={'semibold'}
-                fontSize={'17px'}
-                margin={'15px 0'}
-              >
-                What makes us Unique:
-              </Text>
-              <List>
-                {listItems.map((item, i) => (
-                  <ListItem
-                    display={'flex'}
-                    alignItems={'center'}
-                    justifyContent={'flex-start'}
-                    flexWrap={'nowrap'}
-                    gap={'16px'}
-                    key={i}
+          <Flex>
+            <Flex w={'50%'} flexDirection={'column'}>
+              <Box lineHeight={'1.10'}>
+                <Text fontSize={'40px'} color={'#024731'}>
+                  Developing sustainable and profitable agriculture projects
+                </Text>
+                <Text color={'#024731'} marginTop={'10px'}>
+                  improve standard of living by creating employment, investing
+                  in downstream processing, capacity building and training;
+                  leading to better access to market (both domestic &
+                  international) turning subsistence farmers into cash-cropping
+                  farmers.
+                </Text>
+              </Box>
+              <Box>
+                <Text
+                  color={'#024731'}
+                  fontWeight={'semibold'}
+                  fontSize={'17px'}
+                  margin={'15px 0'}
+                >
+                  What makes us Unique:
+                </Text>
+                <List>
+                  {listItems.map((item, i) => (
+                    <ListItem
+                      display={'flex'}
+                      alignItems={'center'}
+                      justifyContent={'flex-start'}
+                      flexWrap={'nowrap'}
+                      gap={'16px'}
+                      key={i}
+                    >
+                      <Box>
+                        <PiPlant min={'36px'} size={'36px'} color="#93CE20" />
+                      </Box>
+                      <Text>{item.name}</Text>
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            </Flex>
+            <Flex
+              w={'50%'}
+              display={'flex'}
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Flex position="relative">
+                <Box
+                  p={1}
+                  w={'160px'}
+                  h={'160px'}
+                  position="absolute"
+                  top="100"
+                  left="-55"
+                  zIndex={2}
+                  boxShadow="inner"
+                >
+                  <Box
+                    p={1}
+                    w={'160px'}
+                    h={'160px'}
+                    position="absolute"
+                    zIndex={1}
                   >
-                    <Box>
-                      <PiPlant min={'36px'} size={'36px'} color="#93CE20" />
-                    </Box>
-                    <Text>{item.name}</Text>
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
+                    <Image
+                      src="https://images.pexels.com/photos/1562389/pexels-photo-1562389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      w="100%"
+                      h="100%"
+                      rounded={'2xl'}
+                    />
+                  </Box>
+                </Box>
+                <Box
+                  boxShadow="md"
+                  rounded="2xl"
+                  p={1}
+                  w="400px"
+                  h="400px"
+                  zIndex={1}
+                >
+                  <Image
+                    objectFit={'fit'}
+                    rounded="2xl"
+                    src="https://images.pexels.com/photos/1084540/pexels-photo-1084540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    w="100%"
+                    h="100%"
+                  />
+                </Box>
+                <Box
+                  p={1}
+                  w={'200'}
+                  h={'210px'}
+                  position="absolute"
+                  bottom="-55"
+                  right="0"
+                  zIndex={1}
+                >
+                  <Image
+                    src="/about-img-2.png"
+                    w="100%"
+                    h="100%"
+                    objectFit={'fit'}
+                  />
+                </Box>
+              </Flex>
+            </Flex>
           </Flex>
-          <Flex w={'50%'}></Flex>
         </Container>
       </Box>
     </>
