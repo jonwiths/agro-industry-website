@@ -8,11 +8,13 @@ import {
   Image,
   Text
 } from '@chakra-ui/react';
-import React from 'react';
+import { useState } from 'react';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { PiPlant } from 'react-icons/pi';
+import AgriculturePop from './AgiculturePop'
 
 const AboutUs = () => {
+  const [openPopup, setOpenPopup] = useState(false)
   return (
     <>
       <Box as="section" bg="white" maxW="100vw" p="16px" id="about-us">
@@ -63,6 +65,7 @@ const AboutUs = () => {
                   padding: '25px',
                   marginTop: '20px'
                 }}
+                onClick={()=>setOpenPopup(true)}
               >
                 Read More <BsFillArrowRightCircleFill size={'20px'} />{' '}
               </Button>
@@ -136,6 +139,7 @@ const AboutUs = () => {
           </Flex>
         </Container>
       </Box>
+      <AgriculturePop open={openPopup} onClose={()=> setOpenPopup(false)} />
     </>
   );
 };
