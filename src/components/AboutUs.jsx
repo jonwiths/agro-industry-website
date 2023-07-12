@@ -64,7 +64,7 @@ const AboutUs = () => {
                   marginTop: '20px'
                 }}
               >
-                About Us <BsFillArrowRightCircleFill />{' '}
+                Read More <BsFillArrowRightCircleFill />{' '}
               </Button>
             </Box>
             {/* <Box
