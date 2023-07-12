@@ -37,6 +37,15 @@ const infos = [
   }
 ];
 
+const formTextStyle = {
+  color: '#555',
+  fontFamily: 'Readex Pro',
+  fontSize: '20px',
+  fontStyle: 'normal',
+  fontWeight: '400',
+  lineHeight: 'normal'
+}
+
 const ContactUs = () => {
   return(
     <Box
@@ -83,7 +92,12 @@ const ContactUs = () => {
         alignItems='end' 
         justifyContent='center'
        >
-        <Heading color='#FFF'>GET IN TOUCH</Heading>
+        <Heading style={{
+          color: '#FFF',
+          fontSize: '50',
+          fontWeight: '400',
+          lineHeight: 'normal',
+        }}>GET IN TOUCH</Heading>
       </Box>
       <Box my='50px' display='flex' flexDirection='column' align='center'>
         <form>
@@ -95,6 +109,7 @@ const ContactUs = () => {
                 h='79px' 
                 bg='#E9E9E9' 
                 borderRadius='45.5px'
+                sx={formTextStyle}
               />
             </FormControl>
             <FormControl ml='20px'>
@@ -104,6 +119,7 @@ const ContactUs = () => {
                 h='79px' 
                 bg='#E9E9E9' 
                 borderRadius='45.5px'
+                sx={formTextStyle}
                />
             </FormControl>
           </Flex>
@@ -113,14 +129,24 @@ const ContactUs = () => {
               w='1240px' 
               h='194px' 
               bg='#E9E9E9' 
-              borderRadius='25px'/>
+              borderRadius='25px'
+              sx={formTextStyle}
+            />
           </FormControl>
           <Button 
             type='submit' 
-            bg='#93CE20' 
             w='1240px' 
             h='79px' 
             borderRadius='45.5px'
+            bgColor='#93CE20'
+            style={{
+              color: '#FFF',
+              fontFamily: 'Readex Pro',
+              fontSize: '30px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              lineHeight: 'normal',
+            }}
           >
             Send
           </Button> 

@@ -78,7 +78,7 @@ const Footer = () => {
         w='100vw' h='503px'
       >
         <Flex>
-          <Box width='67%' pt={100} px={50}>
+          <Box width='67%' pt={70} px={50}>
             <Flex justifyContent={'left'} mb={20}>
               <VStack spacing={8} align='flex-start'>
                 <Heading 
