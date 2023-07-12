@@ -30,6 +30,11 @@ const content = [
 ];
 
 const Hero = () => {
+  const scrollToSection = (id) => {
+    const element = document.querySelector(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <Stack
@@ -39,6 +44,7 @@ const Hero = () => {
         minH={'100vh'}
         direction={'row'}
         gap={'0'}
+        id="home"
       >
         <Flex
           backgroundImage={'url("/hero-bg-L.png")'}
@@ -135,7 +141,11 @@ const Hero = () => {
                   padding: '25px'
                 }}
               >
-                About Us <BsFillArrowDownCircleFill />{' '}
+                <a href="#about-us" onClick={() => scrollToSection('#about')}>
+                  <Flex alignItems={'center'} gap={4}>
+                    About Us <BsFillArrowDownCircleFill size={'20px'} />
+                  </Flex>
+                </a>{' '}
               </Button>
             </Box>
           </Box>

@@ -93,6 +93,7 @@ const OurSector = () => {
         backgroundColor="#fff"
         p="16px"
         margin={'50px 0'}
+        id="our-sector"
       >
         <Container maxW={'90vw'}>
           <Heading as={'h3'} fontSize={'40px'} color={'#024731'}>

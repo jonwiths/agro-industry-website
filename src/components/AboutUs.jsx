@@ -15,7 +15,7 @@ import { PiPlant } from 'react-icons/pi';
 const AboutUs = () => {
   return (
     <>
-      <Box as="section" bg="white" maxW="100vw" p="16px" id="about-page">
+      <Box as="section" bg="white" maxW="100vw" p="16px" id="about-us">
         <Container maxW={'90vw'} color="#009A4F">
           <Flex>
             <Box w={'60%'}>
@@ -64,7 +64,7 @@ const AboutUs = () => {
                   marginTop: '20px'
                 }}
               >
-                Read More <BsFillArrowRightCircleFill />{' '}
+                Read More <BsFillArrowRightCircleFill size={'20px'} />{' '}
               </Button>
             </Box>
 

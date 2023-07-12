@@ -3,15 +3,20 @@ import { Box, Container, Flex, Spacer, Text } from '@chakra-ui/layout';
 import React from 'react';
 
 const navPage = [
-  { name: 'Home', link: '#' },
-  { name: 'About Us', link: '#' },
-  { name: 'Our Projects', link: '#' },
-  { name: 'Our Sectors', link: '#' },
-  { name: 'Contact Us', link: '#' },
+  { name: 'Home', link: '#home' },
+  { name: 'About Us', link: '#about-us' },
+  { name: 'Our Projects', link: '#our-projects' },
+  { name: 'Our Sectors', link: '#our-sector' },
+  { name: 'Contact Us', link: '#contact-us' },
   { name: 'Media', link: '#' }
 ];
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const element = document.querySelector(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <Box
@@ -31,7 +36,12 @@ const Navbar = () => {
                 style={{ display: 'flex', alignItems: 'center' }}
               >
                 <Text fontSize={'xl'} fontWeight={'medium'} p={'16px'}>
-                  <a href="">{page.name}</a>
+                  <a
+                    href={page.link}
+                    onClick={() => scrollToSection(page.link)}
+                  >
+                    {page.name}
+                  </a>
                 </Text>
               </Box>
             ))}
