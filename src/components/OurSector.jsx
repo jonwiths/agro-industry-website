@@ -110,10 +110,15 @@ const OurSector = () => {
             marginTop={'10px'}
             marginBottom={'50px'}
           ></Box>
-          <Grid templateColumns={'repeat(5, 1fr)'} gap={4}>
+          <Grid
+            templateColumns={'repeat(5, 1fr)'}
+            gap={4}
+            position={'relative'}
+            maxW={'100%'}
+          >
             {sectorCards.map((content, i) => (
               <GridItem key={i}>
-                <Card maxW="sm" w={'300px'}>
+                <Card w={'220px'} h={'350px'}>
                   <Image
                     src={content.img}
                     alt={content.name}
@@ -131,18 +136,25 @@ const OurSector = () => {
                       alignContent={'center'}
                       justifyContent={'center'}
                       marginTop={'16px'}
+                      position={'absolute'}
+                      bottom={'5'}
+                      right={'0'}
+                      left={'0'}
                     >
                       <Button
+                        w={'150px'}
+                        marginTop={'10px'}
                         variant="solid"
                         backgroundColor="#024731"
+                        colorScheme="#024731"
                         color={'#fff'}
                         rounded={'3xl'}
-                        w={'200px'}
-                        marginTop={'20px'}
                         onClick={()=>{
                           setOpenPopup(true)
                           setSector(content)
                         }}
+
+                        
                       >
                         <Text fontSize={'13px'}>
                           {' '}
