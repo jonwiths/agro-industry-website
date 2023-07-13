@@ -10,6 +10,15 @@ import {
 } from '@chakra-ui/react';
 import { BiSolidCaretDownCircle } from 'react-icons/bi';
 
+const localProjects = [
+  {
+    logo: '',
+    name: 'mcip',
+    content:
+      'Metro Pacific Investments Corporation (MPIC) is a Philippine -based unit investment holding company of First Pacific Company Limited through Metro Pacific Holdings, Inc. MPIC through its subsidiaries, provides water, sanitation, and sewerage services and also operates in real estate, and infrastructure projects.'
+  }
+];
+
 const intlProjects = [
   {
     logo: '/projects/1.png',
@@ -67,6 +76,60 @@ const OurProjects = () => {
                   allowToggle="false"
                   marginTop={'30px'}
                   position={'relative'}
+                >
+                  {localProjects.map((project, index) => (
+                    <AccordionItem key={index} p={'16px'}>
+                      <Box
+                        position={'absolute'}
+                        zIndex={2}
+                        backgroundColor="#009A4F"
+                        borderRadius="16px 0 16px 0"
+                        w="43px"
+                        h="51px"
+                      >
+                        <Heading
+                          textAlign="center"
+                          color="#fff"
+                          fontSize={'42px'}
+                        >
+                          {index + 1}
+                        </Heading>
+                      </Box>
+                      <AccordionButton>
+                        <Flex
+                          padding={'20px 0 0 30px'}
+                          as="span"
+                          flex="1"
+                          alignItems={'center'}
+                          textAlign="left"
+                          gap={'16px'}
+                        >
+                          <Avatar
+                            w={'70px'}
+                            h="70px"
+                            src={project.logo}
+                            name={project.name}
+                            bg={'red'}
+                          />
+                          <Heading as={'h4'} fontSize={'30px'}>
+                            {project.name}
+                          </Heading>
+                        </Flex>
+                        <BiSolidCaretDownCircle size={'30px'} color="#93CE20" />
+                      </AccordionButton>
+
+                      <AccordionPanel pb={4}>
+                        <Text color="#024731">{project.content}</Text>
+                      </AccordionPanel>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </Card>
+              {/* <Card>
+                <Accordion
+                  allowToggle
+                  marginTop={'30px'}
+                  position={'relative'}
                   p={'16px'}
                 >
                   <AccordionItem>
@@ -105,18 +168,17 @@ const OurProjects = () => {
 
                     <AccordionPanel pb={4}>
                       <Text color="#024731">
-                        Lorem ipsum dolor sit amet consectetur. Pharetra auctor
-                        nunc pulvinar pretium posuere mi mauris purus fringilla.
-                        Risus faucibus quisque eu nec nulla mauris cras metus
-                        risus. Lorem ipsum dolor sit amet consectetur. Pharetra
-                        auctor nunc pulvinar pretium posuere mi mauris purus
-                        fringilla. Risus faucibus quisque eu nec nulla mauris
-                        cras metus risus.
+                        Metro Pacific Investments Corporation (MPIC) is a
+                        Philippine -based unit investment holding company of
+                        First Pacific Company Limited through Metro Pacific
+                        Holdings, Inc. MPIC through its subsidiaries, provides
+                        water, sanitation, and sewerage services and also
+                        operates in real estate, and infrastructure projects.
                       </Text>
                     </AccordionPanel>
                   </AccordionItem>
                 </Accordion>
-              </Card>
+              </Card> */}
             </Box>
             <Box w={'50%'}>
               <Heading textColor={'#009A4F'} fontSize={'3xl'}>

@@ -133,6 +133,7 @@ const Hero = () => {
                 display={'flex'}
                 gap={'10px'}
                 backgroundColor={'#F67B00'}
+                colorScheme={'#F67B00'}
                 color={'#fff'}
                 fontWeight={'normal'}
                 padding={'25px'}
