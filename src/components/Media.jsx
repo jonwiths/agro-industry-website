@@ -11,10 +11,16 @@ import React from 'react';
 
 const Media = () => {
   return (
-    <Box as="section" display={'flex'} justifyContent={'center'} id="media">
+    <Box
+      as="section"
+      display={'flex'}
+      justifyContent={'center'}
+      id="media"
+      marginBottom={'50px'}
+    >
       <Flex
         w={'1239px'}
-        h={'100vh'}
+        // h={'100vh'}
         flexDirection={'column'}
         alignItems={'flex-start'}
         gap={'49px'}
@@ -34,9 +40,9 @@ const Media = () => {
                   height="228.095px"
                   src="https://www.youtube.com/embed/8ddMwIE4sqI"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   style={{
                     borderRadius: '14.436px',
                     boxShadow:
@@ -48,9 +54,9 @@ const Media = () => {
                   height="228.095px"
                   src="https://www.youtube.com/embed/sRx-OJg0rVU"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   style={{
                     borderRadius: '14.436px',
                     boxShadow:
@@ -66,9 +72,9 @@ const Media = () => {
                   height="228.095px"
                   src="https://www.youtube.com/embed/9Fm5cBmlu7Y"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   style={{
                     borderRadius: '14.436px',
                     boxShadow:
@@ -80,9 +86,9 @@ const Media = () => {
                   height="228.095px"
                   src="https://www.youtube.com/embed/C-d5_qLX6FE"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   style={{
                     borderRadius: '14.436px',
                     boxShadow:
@@ -98,9 +104,9 @@ const Media = () => {
                   height="228.095px"
                   src="https://www.youtube.com/embed/T0P8V3Ndbrs"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   style={{
                     borderRadius: '14.436px',
                     boxShadow:
@@ -112,9 +118,9 @@ const Media = () => {
                   height="228.095px"
                   src="https://www.youtube.com/embed/Dn_iik3M5_Y"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                   style={{
                     borderRadius: '14.436px',
                     boxShadow:

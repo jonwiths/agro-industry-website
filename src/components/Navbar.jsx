@@ -31,10 +31,7 @@ const Navbar = () => {
             <Image src="/nav-logo.png" name="nav logo" alt="nav logo" />
             <Spacer />
             {navPage.map((page) => (
-              <Box
-                key={page.name}
-                style={{ display: 'flex', alignItems: 'center' }}
-              >
+              <Box key={page.name}>
                 <Text fontSize={'xl'} fontWeight={'medium'} p={'16px'}>
                   <a
                     href={page.link}

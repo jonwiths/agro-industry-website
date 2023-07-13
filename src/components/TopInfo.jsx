@@ -54,12 +54,10 @@ const TopInfo = () => {
             {labelAndIcon.map((info) => (
               <Box
                 key={info.name}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  columnGap: '5px',
-                  marginRight: '15px'
-                }}
+                display={'flex'}
+                alignItems={'center'}
+                columnGap={'5px'}
+                marginRight={'15px'}
               >
                 <Heading as="h6" size="md">
                   {' '}
@@ -77,16 +75,14 @@ const TopInfo = () => {
             {socialMediaLinks.map((info) => (
               <Box
                 key={info.name}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  columnGap: '5px',
-                  cursor: 'pointer'
-                }}
+                display={'flex'}
+                alignItems={'center'}
+                columnGap={'5px'}
+                cursor={'pointer'}
               >
                 <Heading as="h6" size="md">
                   {' '}
-                  <a>{info.icon}</a>
+                  <a href={info.link}>{info.icon}</a>
                 </Heading>
               </Box>
             ))}

@@ -67,14 +67,13 @@ const Footer = () => {
     <Box
       id=""
       as="section"
-      style={{
-        backgroundImage:
-          "linear-gradient(90deg, #024731 11.10%, rgba(2, 71, 49, 0.00) 100%), url('footer-tractor.jpg')",
-        backgroundSize: 'cover',
-        display: 'flex',
-        flexShrink: '0',
-        flexDirection: 'column'
-      }}
+      backgroundImage={
+        "linear-gradient(90deg, #024731 11.10%, rgba(2, 71, 49, 0.00) 100%), url('footer-tractor.jpg')"
+      }
+      backgroundSize={'cover'}
+      display={'flex'}
+      flexShrink={'0'}
+      flexDirection={'column'}
       w="100%"
       h="503px"
     >
@@ -83,32 +82,28 @@ const Footer = () => {
           <Flex justifyContent={'left'} mb={20}>
             <VStack spacing={8} align="flex-start">
               <Heading
-                style={{
-                  display: 'flex',
-                  color: '#FFF',
-                  textAlign: 'center',
-                  fontStyle: 'normal',
-                  fontWeight: '400',
-                  lineHeight: 'normal',
-                  fontSize: '50px',
-                  justifyContent: 'left'
-                }}
+                display={'flex'}
+                color={'#FFF'}
+                textAlign={'center'}
+                fontStyle={'normal'}
+                fontWeight={'400'}
+                lineHeight={'normal'}
+                fontSize={'50px'}
+                justifyContent={'left'}
               >
                 INNOVATIVE AGRICULTURE (AGRO) INDUSTRY LIMITED
               </Heading>
               <Text
-                style={{
-                  color: '#FFF',
-                  textAlign: 'center',
-                  fontFamily: 'Readex Pro',
-                  fontStyle: 'normal',
-                  fontWeight: '400',
-                  lineHeight: 'normal',
-                  display: 'flex',
-                  justifyContent: 'left'
-                }}
                 as="h6"
                 size="md"
+                color={'#FFF'}
+                textAlign={'center'}
+                fontFamily={'Readex Pro'}
+                fontStyle={'normal'}
+                fontWeight={'400'}
+                lineHeight={'normal'}
+                display={'flex'}
+                justifyContent={'left'}
               >
                 PO Box 1462, Boroko, NCD, Papua tNew Guinea | Office@iaipng.com
               </Text>
@@ -117,12 +112,10 @@ const Footer = () => {
                   {socialMediaLinks.map((info) => (
                     <Box
                       key={info.name}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        columnGap: '5px',
-                        cursor: 'pointer'
-                      }}
+                      display={'flex'}
+                      alignItems={'center'}
+                      columnGap={'5px'}
+                      cursor={'pointer'}
                     >
                       <Heading as="h6" size="md">
                         {' '}
@@ -166,11 +159,9 @@ const Footer = () => {
           <Image
             src="nav-logo.png"
             alt="Innovative Agri Andustry, Member of LR Group"
-            style={{
-              width: '185px',
-              height: '44.975px',
-              flexShrink: '0'
-            }}
+            width={'185px'}
+            height={'44.975px'}
+            flexShrink={'0'}
           ></Image>
         </Box>
       </Flex>

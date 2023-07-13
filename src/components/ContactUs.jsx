@@ -91,12 +91,10 @@ const ContactUs = () => {
       </Flex>
       <Box h="160px" display="flex" alignItems="end" justifyContent="center">
         <Heading
-          style={{
-            color: '#FFF',
-            fontSize: '50',
-            fontWeight: '400',
-            lineHeight: 'normal'
-          }}
+          color={'#FFF'}
+          fontSize={'50'}
+          fontWeight={'400'}
+          lineHeight={'normal'}
         >
           GET IN TOUCH
         </Heading>
@@ -141,14 +139,12 @@ const ContactUs = () => {
             h="79px"
             borderRadius="45.5px"
             bgColor="#93CE20"
-            style={{
-              color: '#FFF',
-              fontFamily: 'Readex Pro',
-              fontSize: '30px',
-              fontStyle: 'normal',
-              fontWeight: 400,
-              lineHeight: 'normal'
-            }}
+            color={'#FFF'}
+            fontFamily={'Readex Pro'}
+            fontSize={'30px'}
+            fontStyle={'normal'}
+            fontWeight={400}
+            lineHeight={'normal'}
           >
             Send
           </Button>
