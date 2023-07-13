@@ -110,7 +110,7 @@ const OurSector = () => {
           <Grid templateColumns={'repeat(5, 1fr)'} gap={4}>
             {sectorCards.map((content, i) => (
               <GridItem key={i}>
-                <Card maxW="sm" w={'300px'}>
+                <Card maxW="sm" w={'300px'} h={'420px'} position={'relative'}>
                   <Image
                     src={content.img}
                     alt={content.name}
@@ -128,14 +128,19 @@ const OurSector = () => {
                       alignContent={'center'}
                       justifyContent={'center'}
                       marginTop={'16px'}
+                      position={'absolute'}
+                      bottom={'5'}
+                      right={'0'}
+                      left={'0'}
                     >
                       <Button
                         variant="solid"
                         backgroundColor="#024731"
+                        colorScheme="#024731"
                         color={'#fff'}
                         rounded={'3xl'}
                         w={'200px'}
-                        marginTop={'20px'}
+                        marginTop={'10px'}
                       >
                         <Text fontSize={'13px'}>
                           {' '}

@@ -97,7 +97,7 @@ const AccordionList = () => {
           backgroundColor="rgba(0, 0, 0, 0.37);"
         >
           <Container maxW={'80vw'}>
-            <Accordion rounded={'xl'}>
+            <Accordion rounded={'xl'} allowToggle>
               {accordionList.map((content, index) => (
                 <AccordionItem
                   rounded={'xl'}
@@ -110,6 +110,7 @@ const AccordionList = () => {
                       <Box as="span" flex="1" textAlign="left">
                         <Heading color="#024731">{content.name}</Heading>
                       </Box>
+
                       <BiSolidCaretDownCircle size={'30px'} color="#93CE20" />
                     </AccordionButton>
                   </h2>
