@@ -134,32 +134,27 @@ const Carousel = () => {
 
       <Box
         rounded={'full'}
-        style={{
-          position: 'absolute',
-          left: '50px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          marginRight: '10px',
-          backgroundColor: '#fff',
-          border: '4px solid white',
-          cursor: 'pointer'
-        }}
+        position={'absolute'}
+        left={'50px'}
+        top={'50%'}
+        transform={'translateY(-50%)'}
+        marginRight={'10px'}
+        backgroundColor={'#fff'}
+        border={'4px solid white'}
+        cursor={'pointer'}
       >
         <BsFillArrowLeftCircleFill size={'40px'} color="#009A4F" />
       </Box>
       <Box
         rounded={'full'}
-        style={{
-          position: 'absolute',
-          right: '50px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          marginLeft: '10px',
-
-          backgroundColor: '#fff',
-          border: '4px solid white',
-          cursor: 'pointer'
-        }}
+        position={'absolute'}
+        right={'50px'}
+        top={'50%'}
+        transform={'translateY(-50%)'}
+        marginLeft={'10px'}
+        backgroundColor={'#fff'}
+        border={'4px solid white'}
+        cursor={'pointer'}
       >
         <BsFillArrowRightCircleFill size={'40px'} color="#009A4F" />
       </Box>

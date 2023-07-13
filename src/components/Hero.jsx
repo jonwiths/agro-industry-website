@@ -19,7 +19,10 @@ import { FaPlug, FaPlay } from 'react-icons/fa';
 import { PiBuildings } from 'react-icons/pi';
 import { MdOutlineWaterDrop } from 'react-icons/md';
 import { GrGroup } from 'react-icons/gr';
-import { BsFillArrowDownCircleFill } from 'react-icons/bs';
+import {
+  BsFillArrowDownCircleFill,
+  BsFillArrowRightCircleFill
+} from 'react-icons/bs';
 
 const content = [
   { name: 'Agriculture and Agro-Industry', icon: <LuLeaf /> },
@@ -76,18 +79,15 @@ const Hero = () => {
                 <ListItem
                   key={i}
                   as="li"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '20px',
-                    color: '#024731',
-                    fontWeight: 'bold'
-                  }}
+                  display={'flex'}
+                  alignItems={'center'}
+                  gap={'20px'}
+                  color={'#024731'}
+                  fontWeight={'bold'}
                   marginBottom={'15px'}
                   fontSize={'lg'}
                 >
                   <Box
-                    // marginLeft={'0px'}
                     style={
                       name.name === 'Power and Energy Sector' ||
                       name.name === 'Water'
@@ -125,27 +125,31 @@ const Hero = () => {
             </List>
             <Box
               w={'full'}
-              style={{
-                display: 'flex',
-                alignItems: 'flex-end',
-                justifyContent: 'center'
-              }}
+              display={'flex'}
+              alignItems={'flex-end'}
+              justifyContent={'center'}
             >
               <Button
-                style={{
-                  display: 'flex',
-                  gap: '10px',
-                  backgroundColor: '#F67B00',
-                  color: '#fff',
-                  fontWeight: 'normal',
-                  padding: '25px'
-                }}
+                display={'flex'}
+                gap={'10px'}
+                backgroundColor={'#F67B00'}
+                color={'#fff'}
+                fontWeight={'normal'}
+                padding={'25px'}
+                marginTop={'20px'}
               >
-                <a href="#about-us" onClick={() => scrollToSection('#about')}>
-                  <Flex alignItems={'center'} gap={4}>
-                    About Us <BsFillArrowDownCircleFill size={'20px'} />
-                  </Flex>
-                </a>{' '}
+                <Flex alignItems={'center'} gap={4}>
+                  <a
+                    href="#about-us"
+                    onClick={() => {
+                      scrollToSection('#about-us');
+                    }}
+                  >
+                    <Flex alignItems={'center'} gap={4}>
+                      About us <BsFillArrowDownCircleFill size={'20px'} />
+                    </Flex>
+                  </a>{' '}
+                </Flex>
               </Button>
             </Box>
           </Box>
@@ -159,14 +163,18 @@ const Hero = () => {
           minH={'100vh'}
           maxW={'50vw'}
           w={'full'}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
+          display={'flex'}
+          alignItems={'center'}
+          justifyContent={'center'}
         >
           <Box color="#FFF">
-            <Button rounded={'full'} w={'80px'} h={'80px'} color="white">
+            <Button
+              rounded={'full'}
+              w={'80px'}
+              h={'80px'}
+              color="white"
+              _hover={{ outline: '8px solid rgba(255, 255, 255, .7)' }}
+            >
               <FaPlay size={'30px'} color="#009A4F" />
             </Button>
           </Box>

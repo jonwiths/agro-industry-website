@@ -11,10 +11,14 @@ import {
 import { useState } from 'react';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { PiPlant } from 'react-icons/pi';
-import AgriculturePop from './AgiculturePop'
+import AgriculturePop from './AgiculturePop';
 
 const AboutUs = () => {
-  const [openPopup, setOpenPopup] = useState(false)
+  const scrollToSection = (id) => {
+    const element = document.querySelector(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+  const [openPopup, setOpenPopup] = useState(false);
   return (
     <>
       <Box as="section" bg="white" maxW="100vw" p="16px" id="about-us">
@@ -56,18 +60,28 @@ const AboutUs = () => {
                 </Text>
               </Flex>
               <Button
-                style={{
-                  display: 'flex',
-                  gap: '10px',
-                  backgroundColor: '#F67B00',
-                  color: '#fff',
-                  fontWeight: 'normal',
-                  padding: '25px',
-                  marginTop: '20px'
-                }}
-                onClick={()=>setOpenPopup(true)}
+                display={'flex'}
+                gap={'10px'}
+                colorScheme="#F67B00"
+                backgroundColor={'#F67B00'}
+                color={'#fff'}
+                fontWeight={'normal'}
+                padding={'25px'}
+                marginTop={'20px'}
               >
-                Read More <BsFillArrowRightCircleFill size={'20px'} />{' '}
+                <Flex alignItems={'center'} gap={4}>
+                  <a
+                    href="#popup"
+                    onClick={() => {
+                      setOpenPopup(true);
+                      scrollToSection('#popup');
+                    }}
+                  >
+                    <Flex alignItems={'center'} gap={4}>
+                      Read more <BsFillArrowRightCircleFill size={'20px'} />
+                    </Flex>
+                  </a>{' '}
+                </Flex>
               </Button>
             </Box>
 
@@ -139,7 +153,7 @@ const AboutUs = () => {
           </Flex>
         </Container>
       </Box>
-      <AgriculturePop open={openPopup} onClose={()=> setOpenPopup(false)} />
+      <AgriculturePop open={openPopup} onClose={() => setOpenPopup(false)} />
     </>
   );
 };

@@ -51,11 +51,9 @@ const OurProjects = () => {
       >
         <Container maxW={'80vw'}>
           <Flex
-            style={{
-              alignItems: 'flex-start',
-              justifyContent: 'space-around',
-              gap: '50px'
-            }}
+            alignItems={'flex-start'}
+            justifyContent={'space-around'}
+            gap={'50px'}
           >
             <Box w={'50%'}>
               <Heading textColor={'#009A4F'} fontSize={'3xl'}>
