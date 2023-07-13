@@ -56,7 +56,7 @@ const AgriculturePop = ({ open, onClose }) => {
       zIndex={'9999999999'}
     >
       <Box
-        h={'2100px'}
+        h={'1990px'}
         w={'1237px'}
         bg={'#FFF'}
         borderRadius={'20px'}
@@ -64,12 +64,13 @@ const AgriculturePop = ({ open, onClose }) => {
       >
         <Box
           w={'1237px'}
-          h={'517px'}
+          h={'340px'}
           bgImage={"url('popup-img-1.png')"}
           backgroundSize={'cover'}
           backgroundRepeat={'no-repeat'}
           backgroundPosition={'center'}
-          borderRadius={'20px'}
+          borderTopLeftRadius={'20px'}
+          borderTopRightRadius={'20px'}
           display={'flex'}
           justifyContent={'flex-end'}
         >

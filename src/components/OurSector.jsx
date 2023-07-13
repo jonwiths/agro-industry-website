@@ -9,7 +9,7 @@ import {
   Stack,
   Text
 } from '@chakra-ui/layout';
-import React from 'react';
+import { useState } from 'react';
 import {
   Card,
   CardHeader,
@@ -19,6 +19,7 @@ import {
   ButtonGroup,
   Image
 } from '@chakra-ui/react';
+import OurSectorPop from './OurSectorPop';
 
 const sectorCards = [
   {
@@ -84,6 +85,8 @@ const sectorCards = [
 ];
 
 const OurSector = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+  const [sector, setSector] =useState({})
   return (
     <>
       <Box
@@ -136,6 +139,10 @@ const OurSector = () => {
                         rounded={'3xl'}
                         w={'200px'}
                         marginTop={'20px'}
+                        onClick={()=>{
+                          setOpenPopup(true)
+                          setSector(content)
+                        }}
                       >
                         <Text fontSize={'13px'}>
                           {' '}
@@ -150,6 +157,7 @@ const OurSector = () => {
           </Grid>
         </Container>
       </Box>
+      <OurSectorPop open={openPopup} onClose={()=> setOpenPopup(false)} sector={sector}/>
     </>
   );
 };
