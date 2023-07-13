@@ -107,10 +107,15 @@ const OurSector = () => {
             marginTop={'10px'}
             marginBottom={'50px'}
           ></Box>
-          <Grid templateColumns={'repeat(5, 1fr)'} gap={4}>
+          <Grid
+            templateColumns={'repeat(5, 1fr)'}
+            gap={4}
+            position={'relative'}
+            maxW={'100%'}
+          >
             {sectorCards.map((content, i) => (
               <GridItem key={i}>
-                <Card maxW="sm" w={'300px'} h={'420px'} position={'relative'}>
+                <Card w={'220px'} h={'350px'}>
                   <Image
                     src={content.img}
                     alt={content.name}
@@ -139,7 +144,7 @@ const OurSector = () => {
                         colorScheme="#024731"
                         color={'#fff'}
                         rounded={'3xl'}
-                        w={'200px'}
+                        w={'150px'}
                         marginTop={'10px'}
                       >
                         <Text fontSize={'13px'}>
